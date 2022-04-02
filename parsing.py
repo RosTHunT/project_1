@@ -1,5 +1,5 @@
 import requests
-import webbrowser
+
 from bs4 import BeautifulSoup 
 
 
@@ -39,9 +39,8 @@ opys = soup.find('div', class_="uk-width-1-1 uk-margin-small-top tm-lh tm-fa").t
 print(opys)
 
 print('https://kino-teatr.ua/public/main/films/trailer_20362.mp4')
-webbrowser.open('https://kino-teatr.ua/public/main/films/trailer_20362.mp4')
 
-
+def get_informations 
 
 
 
