@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+
+{% for item in categories %}
+
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top mx-auto d-block" src="{{ item.photo.url }}" alt="..." style="width: 200px;
+height: 200px;" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">{{item.name}}</h5>
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'category' item.id %}">Перейти</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+{% endfor %}
+
+{% endblock %}
